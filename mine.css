@@ -1,0 +1,256 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #555;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.search {
+    flex-grow: 1;
+    margin: 0 20px;
+    position: relative;
+}
+
+.search input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+
+.search img{
+    height: 20px;
+}
+
+.search button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 29px;
+    width: 55px;
+}
+
+.sa:hover{
+     background-color: #333;
+     color: white;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.profile-dropdown {
+    position: absolute;
+    background-color: #444;
+    color: #fff;
+    right: 0;
+    top: 60px;
+    z-index: 100;
+    display: none;
+}
+    
+.profile:hover .profile-dropdown {
+    display: block;
+}
+
+.profile-dropdown a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.profile-dropdown a:hover {
+    background-color: #555;
+}
+
+.info{
+    height: 100px;
+    width: 300px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 
+}
+
+.info:hover{
+    border: 4px solid black;
+}
+
+.info-container{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ .card{
+    display: block;
+    width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0.725);
+    position: relative;
+    margin: 40px 20px 10px 20px;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card-content{
+    padding: 15px;
+}
+
+.card-content h3{
+    margin: 0;
+    font-size: 10px;
+    color:yellowgreen ;
+}
+
+.play-btn{
+    width: 50px;
+    height: 50px;
+    background-color: #444;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    transition: transform 0.3s ease ;
+}
+
+.play-btn i{
+    color: aliceblue;
+}
+
+.play-btn:hover{
+    transform: scale(1.1);
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#player{
+    height: 350px;
+    width: 260px;
+    background-color: #333;
+    position: fixed;
+    top: 35%;
+    left: 40%;
+    border-radius: 15px;
+    display: none;
+}
+
+#player:hover{
+    border: 4px solid black;
+}
+
+.close-btn{
+    color: #fff;
+}
+
+.song-image{
+    height: 200px;
+    width: 200px;
+    padding-top: 15px;
+}
+
+.controls{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.control-btn{
+   margin-right: 4px;
+}
+
+
+.music-player-card{
+    text-align: center;
+}
+
+.span{
+    text-align: end;
+    margin: 15px 15px 0px 0px;
+}
+
+.close-btn:hover{
+    background-color: violet;
+    cursor: pointer;
+}
+
+.song-title{
+    margin-top: 10px;
+    color: wheat;
+}
